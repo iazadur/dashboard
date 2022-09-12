@@ -50,7 +50,8 @@
 }
 
 .asidebar .menu .item {
-    padding: 0px 0px 30px 42px;
+    padding-left:42px;
+    margin-bottom: 30px;
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 500;
@@ -72,7 +73,8 @@
     display: none;
 }
 .asidebar .menu .sub_item {
-    padding: 0px 0px 30px 62px;
+    padding-left:62px;
+    margin-bottom: 30px;
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 500;
@@ -88,11 +90,12 @@
 
 .asidebar .menu .sub_item:hover {
     color: white;
-    border-right: 2px solid #FF7901;
+    border-right: 3px solid #FF7901;
 }
 
 .asidebar .menu .item:hover {
     color: white;
+    border-right: 3px solid #FF7901;
 }
 
 .asidebar .menu .item .svg_item {
