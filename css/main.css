@@ -141,6 +141,7 @@
 =============================================== */
 .profile_section {
     background: #FCFBFF;
+    margin-bottom: 100px;
 }
 
 .profile_section .profile {
@@ -304,6 +305,9 @@
 .setting .email {
     width: 1000px;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
 }
 
 .setting .email .notifications {
@@ -322,16 +326,104 @@
     color: #26262E;
 }
 
-input:checked+.title {
-    height: 32px;
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 32px;
-    color: red;
+
+.border {
+    width: 100%;
+    height: 2px;
+    background-color: #F2F2F4;
+    border-radius: 10px;
 }
 
+.email .btn {
+    padding: 10px 16px;
+    gap: 6px;
+    width: 150px;
+    height: 48px;
+    background: #FF7901;
+    box-shadow: 0px 20px 50px rgba(255, 121, 1, 0.3);
+    border-radius: 5px;
+    border: none;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #FFFFFF;
+}
+
+.email .from_control {
+    width: 100%;
+    display: flex;
+    gap: 30px;
+}
+
+.email .from_control .text_field {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.email .from_control .text_field label {
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 32px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #7D7D7E;
+    margin-bottom: 10px;
+}
+
+.email .from_control .text_field input[type=text] {
+    max-width: 450px;
+    width: 100%;
+    height: 60px;
+    border-radius: 10px;
+    padding: 0 20px;
+    background: #FFFFFF;
+    border: 1px solid #F2F2F4;
+    border-radius: 10px;
+}
+
+.email .from_control .text_field input[type=email] {
+    max-width: 450px;
+    width: 100%;
+    height: 60px;
+    border-radius: 10px;
+    padding: 0 20px;
+    background: #FFFFFF;
+    border: 1px solid #F2F2F4;
+    border-radius: 10px;
+}
+.email .from_control .text_field input[type=text]:focus {
+    outline: 1px solid #c9c9c9;
+}
+
+.email .from_control .text_field input[type=email]:focus {
+    outline: 1px solid #c9c9c9;
+}
+
+.email .from_control .text_field input[type=text]::placeholder {
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #26262E;
+
+}
+
+.email .from_control .text_field input[type=email]::placeholder {
+    color: #BDBDBD;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 0em;
+    text-align: left;
+}
 
 
 /* ===============================================

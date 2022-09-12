@@ -96,7 +96,7 @@
                         </ul>
                     </div>
 
-                    <div class="email">
+                    <form class="email">
                         <div class="notifications">
                             <label class="switch">
                                 <input type="checkbox" checked>
@@ -107,15 +107,43 @@
 
                         <div class="notifications">
                             <label class="switch">
-                                <input type="checkbox" checked>
+                                <input type="checkbox">
                                 <span class="slider round"></span>
                             </label>
                             <h3>Notify me when list export completes</h3>
                         </div>
+                        <div class="notifications">
+                            <label class="switch">
+                                <input type="checkbox" checked>
+                                <span class="slider round"></span>
+                            </label>
+                            <h3>Notify me when list verification result is about to expire</h3>
+                        </div>
+                        <div class="border"></div>
+                        <div class="notifications">
+                            <label class="switch">
+                                <input type="checkbox" checked>
+                                <span class="slider round"></span>
+                            </label>
+                            <h3>Receive Low Credits Email</h3>
+                        </div>
+                        <div class="from_control">
+                            <div class="text_field">
+                                <label for="email">Send Email to <span style="color: #FF7901;">*</span></label>
+                                <input type="email" id="email" name="email" placeholder="alexajui@gmail.com">
+                            </div>
+                            <div class="text_field">
+                                <label for="credits">When credits are less than <span style="color: #FF7901;">*</span></label>
+                                <input type="text" id="credits" name="credits" placeholder="0">
+                            </div>
 
-                        <h3>Notify me when list verification result is about to expire</h3>
-                        <h3>Receive Low Credits Email</h3>
-                    </div>
+                        </div>
+                        <div class="border"></div>
+                        <div class="">
+                            <button class="btn">Save Changes</button>
+                        </div>
+
+                    </form>
                 </section>
             </div>
         </section>
