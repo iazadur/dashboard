@@ -139,6 +139,9 @@
 /* ===============================================
 ----------  Start profile styles ---------------
 =============================================== */
+mani {
+    background: #FCFBFF;
+}
 
 main .profile {
     display: flex;
@@ -196,16 +199,22 @@ main .profile .profile_card .profile_details p {
 main .profile .payment {
     flex: 1;
     display: flex;
-    /* justify-content: center; */
-    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
     box-sizing: border-box;
     height: 334px;
-    /* White */
     background: #fff;
     border: 1px solid #F2F2F4;
     border-radius: 10px;
-    gap: 30px;
     padding: 0 30px;
+}
+
+main .profile .payment .credit_cards {
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    gap: 30px;
 }
 
 main .profile .payment h3 {
@@ -215,20 +224,24 @@ main .profile .payment h3 {
     line-height: 30px;
     letter-spacing: 0em;
     text-align: left;
+    margin-bottom: 10px;
 }
 
 .profile .payment .credit_card {
     box-sizing: border-box;
     max-width: 387px;
-    max-height: 154px;
+    height: 154px;
     width: 100%;
-    height: 100%;
     border: 1px solid #F2F2F4;
     border-radius: 10px;
     padding: 30px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+
+.profile .payment .credit_card:hover {
+    border: 1px solid #FF7901;
 }
 
 .profile .payment .credit_card h3 {
@@ -249,6 +262,149 @@ main .profile .payment h3 {
     letter-spacing: 0em;
     text-align: left;
     color: #BDBDBD;
+}
+
+/* ===============================================
+----------  Start profile styles ---------------
+=============================================== */
+/* ===============================================
+----------  Start profile styles ---------------
+=============================================== */
+
+.setting .tab {
+    display: flex;
+    justify-content: center;
+    border-bottom: 2px solid #F2F2F4;
+    padding-bottom: 10px;
+    margin-bottom: 50px;
+}
+
+.setting .tab ul {
+    display: flex;
+    list-style: none;
+    gap: 32px;
+
+}
+
+.setting .tab ul li {
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+
+.setting .tab ul li:hover {
+    color: #FF7901;
+}
+
+
+.setting .email {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.setting .email .notifications {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.setting .email .notifications h3 {
+    height: 32px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 32px;
+    color: #26262E;
+}
+input:checked+.title {
+    height: 32px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 32px;
+    color: red;
+}
+
+
+
+/* ===============================================
+----------  Start profile styles ---------------
+=============================================== */
+
+
+/* ===============================================
+----------  Start profile styles ---------------
+=============================================== */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 30px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #fff;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border: 1px solid #FF7901;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    left: 4px;
+    bottom: 4px;
+    background-color: #FF7901;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked+.slider {
+    background-color: #FF7901;
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px #FF7901;
+}
+
+input:checked+.slider:before {
+    background-color: #fff;
+    height: 20px;
+    width: 20px;
+    /* left: 4px;
+    bottom: 4px; */
+    -webkit-transform: translateX(20px);
+    -ms-transform: translateX(20px);
+    transform: translateX(20px);
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
 }
 
 /* ===============================================
