@@ -100,6 +100,7 @@
 .asidebar .menu .item .down .svg {
     transform: rotate(180deg);
 }
+
 .asidebar .menu .item:hover .down svg {
     stroke: #FF7901;
 }
@@ -421,6 +422,9 @@
 .profile .payment .credit_card:hover {
     border: 1px solid #FF7901;
 }
+.profile .payment .active {
+    border: 1px solid #FF7901;
+}
 
 .profile .payment .credit_card h3 {
     font-family: Poppins;
@@ -453,7 +457,7 @@
     display: flex;
     justify-content: center;
     border-bottom: 2px solid #F2F2F4;
-    padding-bottom: 10px;
+    /* padding-bottom: 10px; */
     margin-bottom: 50px;
 }
 
@@ -464,18 +468,23 @@
 
 }
 
-.setting .tab ul li {
+.setting .tab ul .item {
     font-family: Poppins;
     font-size: 16px;
     font-weight: 500;
     line-height: 28px;
     letter-spacing: 0em;
     text-align: left;
-
+    padding-bottom: 10px;
 }
 
-.setting .tab ul li:hover {
+.setting .tab ul .item:hover {
     color: #FF7901;
+    border-bottom: 2px solid #FF7901;
+}
+.setting .tab ul .active {
+    color: #FF7901;
+    border-bottom: 2px solid #FF7901;
 }
 
 
@@ -493,7 +502,7 @@
     align-items: center;
 }
 
-.setting .email .notifications h3 {
+.setting .email .notifications .title {
     height: 32px;
     font-family: 'Poppins';
     font-style: normal;
@@ -502,6 +511,9 @@
     line-height: 32px;
     color: #26262E;
 }
+    .setting .email .notifications .active {
+        color: #7D7D7E;
+    }
 
 
 .border {
@@ -533,6 +545,7 @@
     width: 100%;
     display: flex;
     gap: 30px;
+    padding-left: 70px;
 }
 
 .email .from_control .text_field {
