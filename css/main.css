@@ -12,20 +12,63 @@
     display: flex;
 }
 
+
+/* ===============================================
+----------  Start Left side bar styles ---------------
+=============================================== */
+
 .body aside {
     width: 275px;
     height: 100vh;
-    background: pink;
+    background: #000;
+    display: flex;
+    justify-content: center;
 }
+
+.asidebar .logo img {
+    margin-top: 11px;
+    margin-bottom: 50px;
+    height: 68px;
+    width: 125px;
+
+    border-radius: 0px;
+
+}
+
+.asidebar .menu li {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 30px;
+    color: #7D7D7E;
+    list-style: none;
+
+}
+
+/* ===============================================
+----------  End Left side bar styles ---------------
+=============================================== */
+
+
+/* ===============================================
+----------  Start Main body styles ---------------
+=============================================== */
 
 .main {
     flex: 1;
     background: #fff;
 }
 
+/* ===============================================
+----------  Start Header styles ---------------
+=============================================== */
 .main header {
     display: flex;
     justify-content: end;
+    background: #000000;
+    height: 90px;
+    align-items: center;
 }
 
 .main header .header_profile {
@@ -44,15 +87,170 @@
     line-height: 30px;
     letter-spacing: 0em;
     text-align: left;
-
+    color: #fff;
 }
 
-.main header .header_profile .balance h4 {
+.main header .header_profile .balance h3 {
     font-family: Poppins;
-font-size: 30px;
-font-weight: 500;
-line-height: 30px;
-letter-spacing: 0em;
-text-align: left;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #FF7901;
+    margin-left: 10px;
+}
+
+.main header .header_profile .user {
+    width: 200px;
+    height: 60px;
+    background: #FFFFFF;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.07);
+    border-radius: 45px;
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    padding: 0 0px 0 10px;
+    margin: 0 30px;
+}
+
+.main header .header_profile .user h4 {
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #26262E;
+    margin: 0 18px 0 10px;
+}
+
+.main header .header_profile .user .icon {
+    width: 12px;
+    height: 6px;
+}
+
+
+/* ===============================================
+----------  End Header styles ---------------
+=============================================== */
+
+
+/* ===============================================
+----------  Start profile styles ---------------
+=============================================== */
+
+main .profile {
+    display: flex;
+    padding: 30px;
+    gap: 30px;
+}
+
+main .profile .profile_card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    width: 325px;
+    height: 334px;
+    /* White */
+    background: #fff;
+    border: 1px solid #F2F2F4;
+    border-radius: 10px;
+}
+
+main .profile .profile_card .profile_details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main .profile .profile_card .img {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+main .profile .profile_card .profile_details h3 {
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 38px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #26262E;
+}
+
+main .profile .profile_card .profile_details p {
+    font-family: Poppins;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #7D7D7E;
 
 }
+
+main .profile .payment {
+    flex: 1;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    box-sizing: border-box;
+    height: 334px;
+    /* White */
+    background: #fff;
+    border: 1px solid #F2F2F4;
+    border-radius: 10px;
+    gap: 30px;
+    padding: 0 30px;
+}
+
+main .profile .payment h3 {
+    font-family: Poppins;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.profile .payment .credit_card {
+    box-sizing: border-box;
+    max-width: 387px;
+    max-height: 154px;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #F2F2F4;
+    border-radius: 10px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.profile .payment .credit_card h3 {
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 32px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #7D7D7E;
+}
+
+.profile .payment .credit_card h6 {
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 32px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #BDBDBD;
+}
+
+/* ===============================================
+----------  Start profile styles ---------------
+=============================================== */
