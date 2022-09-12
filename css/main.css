@@ -139,17 +139,17 @@
 /* ===============================================
 ----------  Start profile styles ---------------
 =============================================== */
-mani {
+.profile_section {
     background: #FCFBFF;
 }
 
-main .profile {
+.profile_section .profile {
     display: flex;
     padding: 30px;
     gap: 30px;
 }
 
-main .profile .profile_card {
+.profile_section .profile .profile_card {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -163,19 +163,19 @@ main .profile .profile_card {
     border-radius: 10px;
 }
 
-main .profile .profile_card .profile_details {
+.profile_section .profile .profile_card .profile_details {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-main .profile .profile_card .img {
+.profile_section .profile .profile_card .img {
     display: flex;
     justify-content: center;
     margin-bottom: 15px;
 }
 
-main .profile .profile_card .profile_details h3 {
+.profile_section .profile .profile_card .profile_details h3 {
     font-family: Poppins;
     font-size: 20px;
     font-weight: 500;
@@ -185,7 +185,7 @@ main .profile .profile_card .profile_details h3 {
     color: #26262E;
 }
 
-main .profile .profile_card .profile_details p {
+.profile_section .profile .profile_card .profile_details p {
     font-family: Poppins;
     font-size: 12px;
     font-weight: 400;
@@ -196,7 +196,7 @@ main .profile .profile_card .profile_details p {
 
 }
 
-main .profile .payment {
+.profile_section .profile .payment {
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -210,14 +210,14 @@ main .profile .payment {
     padding: 0 30px;
 }
 
-main .profile .payment .credit_cards {
+.profile_section .profile .payment .credit_cards {
     display: flex;
     align-items: center;
     box-sizing: border-box;
     gap: 30px;
 }
 
-main .profile .payment h3 {
+.profile_section .profile .payment h3 {
     font-family: Poppins;
     font-size: 24px;
     font-weight: 500;
@@ -321,6 +321,7 @@ main .profile .payment h3 {
     line-height: 32px;
     color: #26262E;
 }
+
 input:checked+.title {
     height: 32px;
     font-family: 'Poppins';
