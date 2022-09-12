@@ -41,12 +41,16 @@
     margin-bottom: 50px;
     height: 68px;
     width: 125px;
-
     border-radius: 0px;
-
 }
 
-.asidebar .menu li {
+.asidebar .menu {
+    width: 100%;
+   
+}
+
+.asidebar .menu .item {
+    padding: 0px 0px 30px 42px;
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 500;
@@ -54,15 +58,59 @@
     line-height: 30px;
     color: #7D7D7E;
     list-style: none;
+    display: flex;
+    gap: 20px;
+    align-items: center;
 
 }
 
-.asidebar .menu li svg {
+
+/* .asidebar .menu .item span {
+
+} */
+.asidebar .menu .sub_menu {
+    display: none;
+}
+.asidebar .menu .sub_item {
+    padding: 0px 0px 30px 62px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 30px;
+    color: #7D7D7E;
+    list-style: none;
+    display: flex;
+    gap: 42px 20px ;
+    align-items: center;
+
+}
+
+.asidebar .menu .sub_item:hover {
+    color: white;
+    border-right: 2px solid #FF7901;
+}
+
+.asidebar .menu .item:hover {
+    color: white;
+}
+
+.asidebar .menu .item .svg_item {
     fill: #7D7D7E;
 }
-.asidebar .menu li:hover svg {
+
+.asidebar .menu .sub_item .svg_sub_item {
+    fill: #7D7D7E;
+}
+
+.asidebar .menu .item:hover .svg_item {
     fill: #FF7901;
 }
+
+.asidebar .menu .sub_item:hover .svg_sub_item {
+    fill: #FF7901;
+}
+
 
 /* ===============================================
 ----------  End Left side bar styles ---------------
@@ -145,7 +193,7 @@
     z-index: 10;
 }
 
-.main header .header_profile .user img {
+.main header .header_profile .user .small_image {
     padding: 0 0px 0 10px;
 }
 
@@ -163,7 +211,7 @@
 .main header .header_profile .user .icon {
     width: 12px;
     height: 6px;
-    padding-right: 10px;
+    padding-right: 20px;
 }
 
 
