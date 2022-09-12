@@ -46,11 +46,11 @@
 
 .asidebar .menu {
     width: 100%;
-   
+
 }
 
 .asidebar .menu .item {
-    padding-left:42px;
+    padding-left: 42px;
     margin-bottom: 30px;
     font-family: 'Poppins';
     font-style: normal;
@@ -72,8 +72,9 @@
 .asidebar .menu .sub_menu {
     display: none;
 }
+
 .asidebar .menu .sub_item {
-    padding-left:62px;
+    padding-left: 62px;
     margin-bottom: 30px;
     font-family: 'Poppins';
     font-style: normal;
@@ -83,9 +84,24 @@
     color: #7D7D7E;
     list-style: none;
     display: flex;
-    gap: 42px 20px ;
+    gap: 42px 20px;
     align-items: center;
 
+}
+
+.asidebar .menu .item .down {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    stroke: #7D7D7E;
+    padding-right: 40px;
+}
+
+.asidebar .menu .item .down .svg {
+    transform: rotate(180deg);
+}
+.asidebar .menu .item:hover .down svg {
+    stroke: #FF7901;
 }
 
 .asidebar .menu .sub_item:hover {
