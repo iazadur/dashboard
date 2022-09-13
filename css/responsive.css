@@ -1,0 +1,55 @@
+@media screen and (max-width: 480px) {
+
+    .body aside {
+        width: 0px;
+        height: 100vh;
+        transform: translateX(-275px);
+        position: fixed;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        z-index: 10;
+    }
+    .main header {
+        /* justify-content: ; */
+    }
+
+    .main header .header_profile .balance p {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .main header .header_profile .balance h3 {
+        font-size: 20px;
+        line-height: 22px;
+    }
+
+    .profile_section .profile {
+        flex-direction: column;
+    }
+  
+    .profile_section .profile .payment .credit_cards{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .setting .tab ul{
+       flex-wrap: wrap;
+       justify-content: center;
+       padding: 0 5px;
+    }
+    .setting .email {
+        width: 100%;
+        padding: 0 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    .email .notifications .title{
+        font-size: 10px;
+        line-height: 12px;
+        text-align: justify;
+    }
+    .email .from_control {
+        flex-direction: column;
+        padding-left: 0;
+    }
+}

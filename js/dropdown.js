@@ -20,3 +20,6 @@ function according() {
 
 
 
+function openNav() {
+    document.getElementById("mySidenav").style.transform = "translateX(0px)";
+  }
