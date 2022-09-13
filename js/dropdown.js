@@ -22,4 +22,12 @@ function according() {
 
 function openNav() {
     document.getElementById("mySidenav").style.transform = "translateX(0px)";
+    document.getElementById("openNav").style.display = "none";
+    document.getElementById("closeNav").style.display = "flex";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.transform = "translateX(-275px)";
+    document.getElementById("openNav").style.display = "flex";
+    document.getElementById("closeNav").style.display = "none";
   }

@@ -10,8 +10,32 @@
         bottom: 0;
         z-index: 10;
     }
-    .main header {
-        /* justify-content: ; */
+    .open{
+        position: absolute;
+        top: 40%;
+        left: 275px;
+        height: 40px;
+        width: 40px;
+        background-color: #7D7D7E;
+        color: white;
+        font-weight: 800;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .close{
+        display: none;
+        position: absolute;
+        top: 40%;
+        left: 275px;
+        height: 40px;
+        width: 40px;
+        background-color: #7D7D7E;
+        color: white;
+        font-weight: 800;
+        /* display: flex; */
+        justify-content: center;
+        align-items: center;
     }
 
     .main header .header_profile .balance p {
@@ -37,8 +61,8 @@
        padding: 0 5px;
     }
     .setting .email {
-        width: 100%;
-        padding: 0 20px;
+        /* width: 100%; */
+        /* padding: 0 20px; */
         display: flex;
         flex-direction: column;
         gap: 30px;

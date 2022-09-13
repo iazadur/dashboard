@@ -22,6 +22,12 @@
     height: 100vh;
 
 }
+.open{
+   display: none;
+}
+.close{
+  display: none;
+}
 
 .asidebar {
     position: fixed;
