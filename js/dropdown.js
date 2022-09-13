@@ -4,6 +4,8 @@ function myFunction() {
     document.getElementById("myDropdown").classList.toggle("show");
 }
 
+
+
 // Asidebar Menu according 
 let acc = document.querySelector(".sub_menu");
 let svg = document.querySelector(".svg");
@@ -19,7 +21,7 @@ function according() {
 
 
 
-
+// Side navbar / Aside bar open and close 
 function openNav() {
     document.getElementById("mySidenav").style.transform = "translateX(0px)";
     document.getElementById("openNav").style.display = "none";
